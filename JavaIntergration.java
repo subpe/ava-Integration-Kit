@@ -2,7 +2,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.bhartipay.commons.crypto.ChecksumUtils;
+import com.subpe.commons.crypto.ChecksumUtils;
 
 public class JavaIntergration {
 
@@ -10,17 +10,17 @@ public class JavaIntergration {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("AMOUNT", "1.00");
 		map.put("CURRENCY_CODE", "356");
-		map.put("CUST_EMAIL", "neeraj.kumar@bhartipay.com");
-		map.put("CUST_NAME", "BHARTIPAY DEMO");
+		map.put("CUST_EMAIL", "neeraj.kumar@subpe.com");
+		map.put("CUST_NAME", "SUBPE DEMO");
 		map.put("CUST_PHONE", "8860705801");
 		map.put("CUST_STREET_ADDRESS1", "Gurgaon");
 		map.put("CUST_ZIP", "122016");
-		map.put("MERCHANTNAME", "BHARTIPAY Demo");
+		map.put("MERCHANTNAME", "SUBPE Demo");
 		map.put("ORDER_ID", "BHARTI00001");
 		map.put("PAY_ID", "1804100638381010");
 
-		map.put("PRODUCT_DESC", "BHARTIPAY Demo Transaction");
-		map.put("RETURN_URL", "http://uat.bhartipay.com/crm/jsp/response.jsp");
+		map.put("PRODUCT_DESC", "SUBPE Demo Transaction");
+		map.put("RETURN_URL", "http://uat.subpe.in/crm/jsp/response.jsp");
 		map.put("TXNTYPE", "SALE");
 
 		// Secret Key eec2fd91c96b4ebb
@@ -30,7 +30,7 @@ public class JavaIntergration {
 		httpRequest.append("<HTML>");
 		httpRequest.append("<BODY OnLoad=\"OnLoadEvent();\" >");
 		httpRequest.append("<form name=\"form1\" action=\"");
-		httpRequest.append("http://uat.bhartipay.com/crm/jsp/paymentrequest");
+		httpRequest.append("http://uat.subpe.in/crm/jsp/paymentrequest");
 		httpRequest.append("\" method=\"post\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"PAY_ID\" value=\"");
@@ -38,7 +38,7 @@ public class JavaIntergration {
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"MERCHANTNAME\" value=\"");
-		httpRequest.append("BHARTIPAY Demo");
+		httpRequest.append("SUBPE Demo");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"ORDER_ID\" value=\"");
@@ -70,11 +70,11 @@ public class JavaIntergration {
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"CUST_EMAIL\" value=\"");
-		httpRequest.append("neeraj.kumar@bhartipay.com");
+		httpRequest.append("neeraj.kumar@subpe.com");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"PRODUCT_DESC\" value=\"");
-		httpRequest.append("Bhartipay Pay Product");
+		httpRequest.append("Subpe Pay Product");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"CURRENCY_CODE\" value=\"");

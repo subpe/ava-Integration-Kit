@@ -1,7 +1,7 @@
 
- PAYMENT MODULE : Bhartipay
+ PAYMENT MODULE : Subpe
 ---------------------------
-	Bhartipay JAVA API
+	Subpe JAVA API
 	
 	    INSTALLATION PROCEDURE
 	  --------------------------
@@ -9,7 +9,7 @@
 	  - Extract the zip file 
 	  - Add both the jar files to the build path.
 	  - Prepare the parameters as per the integration document in a map
-	  - import com.bhartipay.commons.crypto.ChecksumUtils in the class where the checksum needs to be generated
+	  - import com.subpe.commons.crypto.ChecksumUtils in the class where the checksum needs to be generated
       - For generateing request checksum use:
 	     ChecksumUtils.generateCheckSum(Map<String,String>, String secretKey) function which returns checksum String.
 	  - For validating response checksum use:
